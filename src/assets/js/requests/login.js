@@ -2,8 +2,8 @@
  * Login function.
  * Check if the username and the password using i3albo API.
  *
- * Last fix:
- * Filippo Finke 19.09.2018
+ * Last update:
+ * Filippo Finke 19.09.2018 - Separated js and html
  *
  * @author giuliobosco
  * @version 1.0
