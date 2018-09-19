@@ -1,3 +1,11 @@
+/**
+ * Login Page Style.
+ *
+ * Author: giuliobosco
+ * Version: 1.0
+ */
+
+/* vertical alignment */
 .v-center {
 	position: absolute;
 	left: 50%;
@@ -13,7 +21,7 @@
 	width: 50%;
 }
 
-/* username */
+/* username and password label motion - START */
 .user-input-wrp {
 	position: relative;
 	width: 100%;
@@ -50,12 +58,13 @@
 	font-size: 13px;
 	opacity: 1;
 }
+/* username and password label motion - END */
 
 .pass {
 	padding-top: 20px;
 }
 
-.submit {
+.login-btn {
 	margin-top: 10px;
 	border: 0;
 	background-color: transparent;
@@ -68,6 +77,12 @@
 	position: absolute;
 	bottom: 0;
 	left: 10px;
+}
+
+@media screen and (max-width: 425px) {
+	.v-center {
+		width: 95%;
+	}
 }
 
 @media screen and (min-width: 768px) {
