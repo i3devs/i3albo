@@ -10,3 +10,7 @@
 .mt10 {
 	margin-top: 10px;
 }
+
+#errorMessage {
+	color: #f00;
+}
