@@ -2462,6 +2462,7 @@
 								"$ref": "AAAAAAFl8zvrdFCSzOs="
 							},
 							"name": "group_id",
+							"type": "INT",
 							"length": 0
 						}
 					]
