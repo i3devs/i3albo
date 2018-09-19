@@ -14,6 +14,7 @@
 <body>
 
 <form class="center-block v-center">
+	<script src="assets/js/requests/login.js"></script>
 	<img src="assets/img/logo.jpg" class="center-block center-logo">
 	
 	<div class="mt50"></div>
@@ -21,13 +22,13 @@
 	<div class="login">
 		<div class="user-input-wrp">
 			<br/>
-			<input type="text" class="inputText" name="username" required>
+			<input type="text" class="inputText" id="username" required>
 			<span class="floating-label">username:</span>
 		</div>
 		<div class="mt10"></div>
 		
 		<div class="user-input-wrp pass">
-			<input type="password" class="inputText" name="password" required>
+			<input type="password" class="inputText" id="password" required>
 			<span class="floating-label">password:</span>
 		</div>
 		<div class="mt10 text-center">
@@ -36,7 +37,7 @@
 		
 		<div class="">
 			<p class="pull-left mt10"><small>forget your password?</small></p>
-			<input type="button" value="login" class="pull-right submit">
+			<input type="button" value="login" class="pull-right submit" onclick="checkUsername()">
 		</div>
 	</div>
 </form>
