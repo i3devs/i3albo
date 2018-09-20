@@ -1,6 +1,6 @@
 # i3albo database creation script.
 # Author: giuliobosco
-# Version: 1.0
+# Version: 1.0.1
 
 CREATE DATABASE i3albo;
 
