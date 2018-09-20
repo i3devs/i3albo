@@ -284,13 +284,28 @@
 											"top": 366,
 											"width": 195.29052734375,
 											"height": 13
+										},
+										{
+											"_type": "ERDColumnView",
+											"_id": "AAAAAAFl9gxMOTZIjJE=",
+											"_parent": {
+												"$ref": "AAAAAAFl8eQ1Ak8SMuY="
+											},
+											"model": {
+												"$ref": "AAAAAAFl9grfQzY/iek="
+											},
+											"font": "Arial;13;0",
+											"left": 853,
+											"top": 381,
+											"width": 195.29052734375,
+											"height": 13
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 848,
 									"top": 271,
 									"width": 205.29052734375,
-									"height": 113
+									"height": 128
 								}
 							],
 							"font": "Arial;13;0",
@@ -2203,6 +2218,16 @@
 							"name": "lastname",
 							"type": "VARCHAR",
 							"length": "50"
+						},
+						{
+							"_type": "ERDColumn",
+							"_id": "AAAAAAFl9grfQzY/iek=",
+							"_parent": {
+								"$ref": "AAAAAAFl8eQ1AU8OCTs="
+							},
+							"name": "born_date",
+							"type": "DATE",
+							"length": 0
 						}
 					]
 				},
