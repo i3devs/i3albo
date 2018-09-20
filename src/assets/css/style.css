@@ -14,3 +14,20 @@
 #errorMessage {
 	color: #f00;
 }
+
+.m {
+	display: none;
+}
+
+.d {
+	display: block;
+}
+
+@media screen and (max-width: 768px){
+	.m {
+		display: block;
+	}
+	.d {
+		display: none;
+	}
+}
