@@ -15,14 +15,18 @@ CREATE TABLE i3albo.group (
 );
 
 CREATE TABLE i3albo.user (
-	username  VARCHAR(50) PRIMARY KEY AUTO_INCREMENT,
-	group_id  INT          NOT NULL,
-	email     VARCHAR(255) NOT NULL,
-	password  CHAR(64)     NOT NULL,
-	img_path  VARCHAR(50),
-	firstname VARCHAR(50)  NOT NULL,
-	lastname  VARCHAR(50)  NOT NULL,
-	born_date DATE         NOT NULL,
+	username       VARCHAR(50) PRIMARY KEY AUTO_INCREMENT,
+	group_id       INT          NOT NULL,
+	email          VARCHAR(255) NOT NULL,
+	password       CHAR(64)     NOT NULL,
+	img_path       VARCHAR(50),
+	firstname      VARCHAR(50)  NOT NULL,
+	lastname       VARCHAR(50)  NOT NULL,
+	born_date      DATE         NOT NULL,
+	licenses       INT(1),
+	receive_email  TINYINT,
+	show_birthdays TINYINT,
+	phone_number   VARCHAR(20),
 
 	FOREIGN KEY (group_id) REFERENCES i3albo.group (id)
 );
@@ -52,7 +56,7 @@ CREATE TABLE i3albo.task (
 	id              INT PRIMARY KEY AUTO_INCREMENT,
 	task_type_id    INT          NOT NULL,
 	author_username VARCHAR(50)  NOT NULL,
-	group_id        INT          NOT NULL, 
+	group_id        INT          NOT NULL,
 	date            DATETIME     NOT NULL,
 	title           VARCHAR(100) NOT NULL,
 	description     TEXT,
