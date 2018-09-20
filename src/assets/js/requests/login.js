@@ -18,8 +18,8 @@ $( "#loginBtn" ).click(function() {
 
 	var json = $.getJSON( "assets/php/login.php", {username: username, password: password})
 		.done(function(data) {
-			if (data.ok == true) {
-				window.location = "app.html";
+			if (data.ok === true) {
+				window.location = "#/app";
 			} else {
 				$('#errorMessage').text(data.message)
 			}
