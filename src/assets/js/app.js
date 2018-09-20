@@ -14,33 +14,16 @@ var app = angular.module('ViewsAPP', ['ngRoute']);
  * Configure app.
  */
 app.config(function ($routeProvider) {
-	$routeProvider
-		.when('/', {
+	$routeProvider.when('/', {
 			templateUrl: 'views/home.html'
-		})
-		.when('/login', {
+		});
+	$routeProvider.when('/login', {
 			templateUrl: 'views/login.html'
-		})
-		.when('/app', {
+		});
+	$routeProvider.when('/app', {
 			templateUrl: 'views/app.html'
-		})
-		.otherwise({
+		});
+	$routeProvider.otherwise({
 			redirectTo: '/'
 		});
 });
-
-/*
-app.config(function ($routeProvider) {
-	$routeProvider
-		.when('/', {
-			controller: 'HomeController',
-			templateUrl: 'views/home.html'
-		})
-		.when('/photos/:id', {
-			controller: 'PhotoController',
-			templateUrl: 'views/photo.html'
-		})
-		.otherwise({
-			redirectTo: '/'
-		});
-});*/
