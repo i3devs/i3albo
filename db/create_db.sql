@@ -22,6 +22,7 @@ CREATE TABLE i3albo.user (
 	img_path  VARCHAR(50),
 	firstname VARCHAR(50)  NOT NULL,
 	lastname  VARCHAR(50)  NOT NULL,
+	born_date DATE         NOT NULL,
 
 	FOREIGN KEY (group_id) REFERENCES i3albo.group (id)
 );
