@@ -7,7 +7,7 @@
 			"time": "22:00",
 			"title": "MyPanelSample",
 			"author": "giuliobosco",
-			"decription": "http://classroom.google.com/c/MTc2MjgwOTc4NTda/a/MTc4NzI5MzYwMTFa/details",
+			"description": "http://classroom.google.com/c/MTc2MjgwOTc4NTda/a/MTc4NzI5MzYwMTFa/details",
 		},
 		{
 			"id": 1,
@@ -16,7 +16,7 @@
 			"time": "22:00",
 			"title": "MyPanelSample",
 			"author": "giuliobosco",
-			"decription": "http://classroom.google.com/c/MTc2MjgwOTc4NTda/a/MTc4NzI5MzYwMTFa/details",
+			"description": "http://classroom.google.com/c/MTc2MjgwOTc4NTda/a/MTc4NzI5MzYwMTFa/details",
 		}
 	]
 }
