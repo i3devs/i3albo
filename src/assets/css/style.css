@@ -15,6 +15,10 @@
 	margin-top: 10px;
 }
 
+.ml10 {
+	margin-left: 10px;
+}
+
 #errorMessage {
 	color: #f00;
 }
