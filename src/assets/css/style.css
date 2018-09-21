@@ -19,6 +19,23 @@
 	margin-left: 10px;
 }
 
+.p5 {
+	padding: 5px;
+}
+
+.pl5 {
+	padding: 0 0 0 5px;
+}
+
+.pr5 {
+	padding: 0 5px 0 0;
+}
+
+.border {
+	border: 1px solid #777;
+	border-collapse: collapse;
+}
+
 #errorMessage {
 	color: #f00;
 }
@@ -38,4 +55,30 @@
 	.d {
 		display: none!important;
 	}
+}
+
+h2.title {
+	color: #777;
+	margin: 15px 0 0 15px;
+}
+
+div.subject,
+div.date,
+div.time {
+	font-size: 1em;
+}
+
+div.task-title {
+	font-size: 1.2em;
+}
+
+div.date small,
+div.subject small,
+div.time small,
+div.task-title small {
+	font-size: 0.7em;
+}
+
+.details {
+	display: none;
 }
