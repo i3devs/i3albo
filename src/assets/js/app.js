@@ -21,6 +21,7 @@ app.config(function ($routeProvider) {
 			templateUrl: 'views/login.html'
 		});
 	$routeProvider.when('/app', {
+		controller: 'DashTaskController',
 			templateUrl: 'views/app.html'
 		});
 	$routeProvider.otherwise({
