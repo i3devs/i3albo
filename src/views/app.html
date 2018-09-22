@@ -112,21 +112,21 @@
 	</div>
 </div>
 
-<div class="col-md-12 section">
+<div class="col-md-12 section" ng-controller="DashEventsController">
 	<h3 class="section-title">events</h3>
 	
-	<div class="border">
+	<div class="border" ng-repeat="dashEvent in dashEvents">
 		<div class="row col-md-12 preview">
 			<div class="date pull-right text-right pr5">
 				<small>date:</small>
 				<br>
-				26/09/2018
+				{{dashEvent.date}}
 			</div>
 			
 			<div class="subject pl5">
 				<small>title:</small>
 				<br>
-				Title
+				{{dashEvent.title}}
 			</div>
 		</div>
 		
@@ -137,7 +137,7 @@
 			
 			<div class="col-md-12 pl5">
 				<small>author:</small>
-				giuliobosco
+				{{dashEvent.author}}
 			</div>
 			
 			
@@ -145,16 +145,14 @@
 				<small>description:</small>
 				<br>
 				<div class="p5">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lobortis nisi nec condimentum gravida.
-					Maecenas tortor sapien, suscipit et lacinia sit amet, venenatis a nunc. Quisque id urna ultrices,
-					aliquam urna vitae, fermentum elit. Suspendisse vel iaculis diam.
+					{{dashEvent.description}}
 				</div>
 			</div>
 			
 			<div>
 				<a class="col-xs-4 text-center">&nbsp;</a>
-				<a class="col-xs-4 text-center">edit <i class="fa fa-edit"></i></a>
-				<a class="col-xs-4 text-center">delete <i class="fa fa-times"></i></a>
+				<a class="col-xs-4 text-center" href="#/app/edit/event{{dashEvent.id}}">edit <i class="fa fa-edit"></i></a>
+				<a class="col-xs-4 text-center" href="#/app/delete/event{{dashEvent.id}}">delete <i class="fa fa-times"></i></a>
 			</div>
 		</div>
 	</div>
