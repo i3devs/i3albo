@@ -66,21 +66,21 @@
 	</div>
 </div>
 
-<div class="col-md-12 section">
+<div class="col-md-12 section" ng-controller="DashTestsController">
 	<h3 class="section-title">tests</h3>
 	
-	<div class="border">
+	<div class="border" ng-repeat="dashTest in dashTests">
 		<div class="row col-md-12 preview">
 			<div class="date pull-right text-right pr5">
 				<small>date:</small>
 				<br>
-				26/09/2018
+				{{dashTest.date}}
 			</div>
 			
 			<div class="subject pl5">
 				<small>subject:</small>
 				<br>
-				M 226B - Java
+				{{dashTest.subject}}
 			</div>
 		</div>
 		
@@ -91,7 +91,7 @@
 			
 			<div class="col-md-12 pl5">
 				<small>author:</small>
-				giuliobosco
+				{{dashTest.author}}
 			</div>
 			
 			
@@ -99,16 +99,14 @@
 				<small>description:</small>
 				<br>
 				<div class="p5">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lobortis nisi nec condimentum gravida.
-					Maecenas tortor sapien, suscipit et lacinia sit amet, venenatis a nunc. Quisque id urna ultrices,
-					aliquam urna vitae, fermentum elit. Suspendisse vel iaculis diam.
+					{{dashTest.arguments}}
 				</div>
 			</div>
 			
 			<div>
 				<a class="col-xs-4 text-center">&nbsp;</a>
-				<a class="col-xs-4 text-center">edit <i class="fa fa-edit"></i></a>
-				<a class="col-xs-4 text-center">delete <i class="fa fa-times"></i></a>
+				<a class="col-xs-4 text-center" href="#/app/edit/test{{dashTest.id}}">edit <i class="fa fa-edit"></i></a>
+				<a class="col-xs-4 text-center" href="#/app/delete/test{{dashTest.id}}">delete <i class="fa fa-times"></i></a>
 			</div>
 		</div>
 	</div>
