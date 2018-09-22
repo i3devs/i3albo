@@ -1,5 +1,5 @@
 app.factory('dashTasks', ['$http', function($http) {
-	return $http.get('assets/php/app/tasks.php')
+	return $http.get('assets/php/app/dashTasks.php')
 		.success(function(data) {
 			return data;
 		})
