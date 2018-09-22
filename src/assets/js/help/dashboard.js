@@ -1,3 +1,3 @@
-$('.preview').click(function () {
+$(document).on('click', '.preview', function () {
 	$(this).siblings(':last').slideToggle();
 });
