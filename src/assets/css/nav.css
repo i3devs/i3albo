@@ -37,6 +37,7 @@ nav ul.nav li div a i.fa.fa-2x {
 	nav ul.nav {
 		width: 100%;
 
+		z-index: 1;
 		position: fixed;
 		bottom: 0;
 		top: auto;
