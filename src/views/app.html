@@ -6,153 +6,161 @@
 <br>
 <div class="col-md-12 clearfix"></div>
 
-<div class="col-md-12 section" ng-controller="DashTasksController">
-	<h3 class="section-title">tasks</h3>
-	
-	<div class="border" ng-repeat="dashTask in dashTasks">
-		<div class="row col-md-12 preview">
-			<div class="date pull-right text-right pr5">
-				<small>date:</small>
-				<br>
-				{{dashTask.date}}
-			</div>
-			
-			<div class="subject pl5">
-				<small>subject:</small>
-				<br>
-				{{dashTask.subject}}
-			</div>
-		</div>
-		
-		<div class="row col-md-12 preview">
-			<div class="time pull-right text-right pr5">
-				<small>time:</small>
-				<br>
-				{{dashTask.time}}
-			</div>
-			
-			<div class="task-title pl5">
-				<small>title:</small>
-				<br>
-				{{dashTask.title}}
-			</div>
-		</div>
-		
-		<div class="row col-md-12 details">
-			<div class="col-md-12">
-				<div class="col-md-12 border"></div>
-			</div>
-			
-			<div class="col-md-12 pl5">
-				<small>author:</small>
-				{{dashTask.author}}
-			</div>
-			
-			
-			<div class="col-md-12 pl5">
-				<small>description:</small>
-				<br>
-				<div class="p5">
-					{{dashTask.description}}
+<div class="overflow-scroll">
+	<div class="col-md-12 section" ng-controller="DashTasksController">
+		<h3 class="section-title">tasks</h3>
+
+		<div class="border" ng-repeat="dashTask in dashTasks">
+			<div class="row col-md-12 preview">
+				<div class="date pull-right text-right pr5">
+					<small>date:</small>
+					<br>
+					{{dashTask.date}}
+				</div>
+
+				<div class="subject pl5">
+					<small>subject:</small>
+					<br>
+					{{dashTask.subject}}
 				</div>
 			</div>
-			
-			<div>
-				<a class="col-xs-4 text-center">&nbsp;</a>
-				<a class="col-xs-4 text-center" href="#/app/edit/task{{dashTask.id}}">edit <i class="fa fa-edit"></i></a>
-				<a class="col-xs-4 text-center" href="#/app/delete/task{{dashTask.id}}">delete <i class="fa fa-times"></i></a>
+
+			<div class="row col-md-12 preview">
+				<div class="time pull-right text-right pr5">
+					<small>time:</small>
+					<br>
+					{{dashTask.time}}
+				</div>
+
+				<div class="task-title pl5">
+					<small>title:</small>
+					<br>
+					{{dashTask.title}}
+				</div>
+			</div>
+
+			<div class="row col-md-12 details">
+				<div class="col-md-12">
+					<div class="col-md-12 border"></div>
+				</div>
+
+				<div class="col-md-12 pl5">
+					<small>author:</small>
+					{{dashTask.author}}
+				</div>
+
+
+				<div class="col-md-12 pl5">
+					<small>description:</small>
+					<br>
+					<div class="p5">
+						{{dashTask.description}}
+					</div>
+				</div>
+
+				<div>
+					<a class="col-xs-4 text-center">&nbsp;</a>
+					<a class="col-xs-4 text-center" href="#/app/edit/task{{dashTask.id}}">edit <i
+							class="fa fa-edit"></i></a>
+					<a class="col-xs-4 text-center" href="#/app/delete/task{{dashTask.id}}">delete <i
+							class="fa fa-times"></i></a>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<div class="col-md-12 section" ng-controller="DashTestsController">
-	<h3 class="section-title">tests</h3>
-	
-	<div class="border" ng-repeat="dashTest in dashTests">
-		<div class="row col-md-12 preview">
-			<div class="date pull-right text-right pr5">
-				<small>date:</small>
-				<br>
-				{{dashTest.date}}
-			</div>
-			
-			<div class="subject pl5">
-				<small>subject:</small>
-				<br>
-				{{dashTest.subject}}
-			</div>
-		</div>
-		
-		<div class="row col-md-12 details">
-			<div class="col-md-12">
-				<div class="col-md-12 border"></div>
-			</div>
-			
-			<div class="col-md-12 pl5">
-				<small>author:</small>
-				{{dashTest.author}}
-			</div>
-			
-			
-			<div class="col-md-12 pl5">
-				<small>arguments:</small>
-				<br>
-				<div class="p5">
-					{{dashTest.arguments}}
+	<div class="col-md-12 section" ng-controller="DashTestsController">
+		<h3 class="section-title">tests</h3>
+
+		<div class="border" ng-repeat="dashTest in dashTests">
+			<div class="row col-md-12 preview">
+				<div class="date pull-right text-right pr5">
+					<small>date:</small>
+					<br>
+					{{dashTest.date}}
+				</div>
+
+				<div class="subject pl5">
+					<small>subject:</small>
+					<br>
+					{{dashTest.subject}}
 				</div>
 			</div>
-			
-			<div>
-				<a class="col-xs-4 text-center">&nbsp;</a>
-				<a class="col-xs-4 text-center" href="#/app/edit/test{{dashTest.id}}">edit <i class="fa fa-edit"></i></a>
-				<a class="col-xs-4 text-center" href="#/app/delete/test{{dashTest.id}}">delete <i class="fa fa-times"></i></a>
+
+			<div class="row col-md-12 details">
+				<div class="col-md-12">
+					<div class="col-md-12 border"></div>
+				</div>
+
+				<div class="col-md-12 pl5">
+					<small>author:</small>
+					{{dashTest.author}}
+				</div>
+
+
+				<div class="col-md-12 pl5">
+					<small>arguments:</small>
+					<br>
+					<div class="p5">
+						{{dashTest.arguments}}
+					</div>
+				</div>
+
+				<div>
+					<a class="col-xs-4 text-center">&nbsp;</a>
+					<a class="col-xs-4 text-center" href="#/app/edit/test{{dashTest.id}}">edit <i
+							class="fa fa-edit"></i></a>
+					<a class="col-xs-4 text-center" href="#/app/delete/test{{dashTest.id}}">delete <i
+							class="fa fa-times"></i></a>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<div class="col-md-12 section" ng-controller="DashEventsController">
-	<h3 class="section-title">events</h3>
-	
-	<div class="border" ng-repeat="dashEvent in dashEvents">
-		<div class="row col-md-12 preview">
-			<div class="date pull-right text-right pr5">
-				<small>date:</small>
-				<br>
-				{{dashEvent.date}}
-			</div>
-			
-			<div class="subject pl5">
-				<small>title:</small>
-				<br>
-				{{dashEvent.title}}
-			</div>
-		</div>
-		
-		<div class="row col-md-12 details">
-			<div class="col-md-12">
-				<div class="col-md-12 border"></div>
-			</div>
-			
-			<div class="col-md-12 pl5">
-				<small>author:</small>
-				{{dashEvent.author}}
-			</div>
-			
-			
-			<div class="col-md-12 pl5">
-				<small>description:</small>
-				<br>
-				<div class="p5">
-					{{dashEvent.description}}
+	<div class="col-md-12 section" ng-controller="DashEventsController">
+		<h3 class="section-title">events</h3>
+
+		<div class="border" ng-repeat="dashEvent in dashEvents">
+			<div class="row col-md-12 preview">
+				<div class="date pull-right text-right pr5">
+					<small>date:</small>
+					<br>
+					{{dashEvent.date}}
+				</div>
+
+				<div class="subject pl5">
+					<small>title:</small>
+					<br>
+					{{dashEvent.title}}
 				</div>
 			</div>
-			
-			<div>
-				<a class="col-xs-4 text-center">&nbsp;</a>
-				<a class="col-xs-4 text-center" href="#/app/edit/event{{dashEvent.id}}">edit <i class="fa fa-edit"></i></a>
-				<a class="col-xs-4 text-center" href="#/app/delete/event{{dashEvent.id}}">delete <i class="fa fa-times"></i></a>
+
+			<div class="row col-md-12 details">
+				<div class="col-md-12">
+					<div class="col-md-12 border"></div>
+				</div>
+
+				<div class="col-md-12 pl5">
+					<small>author:</small>
+					{{dashEvent.author}}
+				</div>
+
+
+				<div class="col-md-12 pl5">
+					<small>description:</small>
+					<br>
+					<div class="p5">
+						{{dashEvent.description}}
+					</div>
+				</div>
+
+				<div>
+					<a class="col-xs-4 text-center">&nbsp;</a>
+					<a class="col-xs-4 text-center" href="#/app/edit/event{{dashEvent.id}}">edit <i
+							class="fa fa-edit"></i></a>
+					<a class="col-xs-4 text-center" href="#/app/delete/event{{dashEvent.id}}">delete <i
+							class="fa fa-times"></i></a>
+				</div>
 			</div>
 		</div>
 	</div>

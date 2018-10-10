@@ -35,6 +35,10 @@
 	padding: 0 5px 0 0;
 }
 
+.overflow-scroll {
+	overflow: scroll;
+}
+
 .border {
 	border: 1px solid #777;
 	border-collapse: collapse;
